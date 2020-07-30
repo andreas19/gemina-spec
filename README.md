@@ -99,8 +99,8 @@ of the required length.
 
 See also the [source code][] and the [documentation][] of the reference implementation.
 
-[source code]: https://github.com/andreas19/salmagundi/blob/master/src/salmagundi/crypto.py "Source Code"
-[documentation]: https://andreas19.github.io/salmagundi/mod_crypto.html
+[source code]: https://github.com/andreas19/pygemina/blob/master/src/gemina/__init__.py
+[documentation]: https://andreas19.github.io/pygemina/mod_api.html
 
 ### Known implementations
 
@@ -109,7 +109,7 @@ See also the [source code][] and the [documentation][] of the reference implemen
 | [PyGemina][]                 | Python 3             | reference implementation |
 | [Go-Gemina][]                | Go                   |                          |
 
-[PyGemina]: https://andreas19.github.io/pygemina/mod_gemina.html
+[PyGemina]: https://andreas19.github.io/pygemina/mod_api.html
 [Go-Gemina]: https://pkg.go.dev/github.com/andreas19/go-gemina/gemina
 
 ## Links
