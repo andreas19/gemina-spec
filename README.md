@@ -4,6 +4,15 @@ This document describes the binary format of encrypted data and the
 procedures for encrypting and decrypting data. It also sets rules for
 the API that implementations should provide.
 
+- [Description](#description)
+    * [Binary format](#binary-format)
+    * [Encryption](#encryption)
+    * [Decryption](#decryption)
+- [Implementations](#implementations)
+    * [API](#api)
+    * [Known implementations](#known-implementations)
+- [Links](#links)
+
 ## Description
 
 Currently there are four versions. All versions use AES in CBC mode,
