@@ -4,4 +4,4 @@
 
 ![Icon](https://i.creativecommons.org/l/by/4.0/88x31.png)
 
-Copyright (c) 2019-2022, Andreas Suhre <andreas19@posteo.eu>
+Copyright (c) 2019-2024, Andreas Suhre <andreas19@posteo.eu>

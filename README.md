@@ -15,22 +15,24 @@ the API that implementations should provide.
 
 ## Description
 
-Currently there are four versions. All versions use AES in CBC mode,
+Currently there are five versions. All versions use AES in CBC mode,
 PKCS #7 padding, and HMAC-SHA256 as message authentication code (MAC).
 
-Lengths of the secret keys in bits:
-
-| Version | AES | HMAC |
-| :-----: | --: | ---: |
-|    1    | 128 |  128 |
-|    2    | 128 |  256 |
-|    3    | 192 |  256 |
-|    4    | 256 |  256 |
-
+There are separate secret keys for AES and HMAC (see table below).
 A *Gemina* key is the concatenation of both keys.
 
 To derive a *Gemina* key from a password PBKDF2HMAC-SHA256 with a 128 bit
-salt and 100,000 iterations is used.
+salt and a fixed number of iterations (see table below) is used.
+
+Lengths of the secret keys in bits and number of iterations for PBKDF2:
+
+| Version | AES | HMAC | Iterations |
+| :-----: | --: | ---: | ---------: |
+|    1    | 128 |  128 |    100,000 |
+|    2    | 128 |  256 |    100,000 |
+|    3    | 192 |  256 |    100,000 |
+|    4    | 256 |  256 |    100,000 |
+|    5    | 256 |  256 |    600,000 |
 
 The initialization vector (IV) for CBC, the key, and the salt
 for PBKDF2HMAC must be created in a cryptographically secure way.
@@ -56,6 +58,7 @@ Version byte (hexadecimal):
 - Version 2: `8b`
 - Version 3: `8c`
 - Version 4: `8d`
+- Version 5: `8e`
 
 ### Encryption
 
@@ -117,8 +120,8 @@ See also the [source code][] and the [documentation][] of the reference implemen
 | ---------------------------- | -------------------- | ------------------------ |
 | [PyGemina][]                 | Python 3             | reference implementation |
 | [Go-Gemina][]                | Go                   |                          |
-| [Gemina4J][]                 | Java                 |                          |
-| [Gemina-RS][]                | Rust                 |                          |
+| [Gemina4J][]                 | Java                 | only versions 1 - 4      |
+| [Gemina-RS][]                | Rust                 | only versions 1 - 4      |
 
 [PyGemina]: https://andreas19.github.io/pygemina/mod_api.html
 [Go-Gemina]: https://pkg.go.dev/github.com/andreas19/go-gemina/gemina
