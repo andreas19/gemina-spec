@@ -121,7 +121,7 @@ See also the [source code][] and the [documentation][] of the reference implemen
 | [PyGemina][]                 | Python 3             | reference implementation |
 | [Go-Gemina][]                | Go                   |                          |
 | [Gemina4J][]                 | Java                 | only versions 1 - 4      |
-| [Gemina-RS][]                | Rust                 | only versions 1 - 4      |
+| [Gemina-RS][]                | Rust                 |                          |
 
 [PyGemina]: https://andreas19.github.io/pygemina/mod_api.html
 [Go-Gemina]: https://pkg.go.dev/github.com/andreas19/go-gemina/gemina
