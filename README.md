@@ -120,7 +120,7 @@ See also the [source code][] and the [documentation][] of the reference implemen
 | ---------------------------- | -------------------- | ------------------------ |
 | [PyGemina][]                 | Python 3             | reference implementation |
 | [Go-Gemina][]                | Go                   |                          |
-| [Gemina4J][]                 | Java                 | only versions 1 - 4      |
+| [Gemina4J][]                 | Java                 |                          |
 | [Gemina-RS][]                | Rust                 |                          |
 
 [PyGemina]: https://andreas19.github.io/pygemina/mod_api.html
